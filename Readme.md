@@ -1,6 +1,6 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Saushkina Nina](https://up.htmlacademy.ru/adaptive/21/user/1489585).
+* Студент: [Saushkina Nina](https://github.com/youngImposer/Cat-energy-sourse).
 * Наставник: `Пока нет, но может быть`.
 
 ---
