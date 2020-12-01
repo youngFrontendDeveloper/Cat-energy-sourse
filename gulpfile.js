@@ -59,7 +59,7 @@ gulp.task("sprite", function () {
 });
 
 gulp.task("html", function () {
-  return gulp.src("./*.html")
+  return gulp.src("source/*.html")
     .pipe(posthtml([
       include()
     ]))
@@ -90,16 +90,16 @@ gulp.task("webp", function () {
 
 // Файлы для подключения в строгом порядке:
 
-let jsFiles = [  
-  "./source/js/main.js"   
+let jsFiles = [
+  "./source/js/main.js"
 ];
 
-// Task на скрипты JS 
+// Task на скрипты JS
 gulp.task("script", function () {
   return gulp.src(jsFiles)
   .pipe(sourcemap.init()) // инициализируем создание Source Maps
   .pipe(concat("script.js"))  // Объединение файлов в один
-  .pipe(gulp.dest("./source/js")) 
+  .pipe(gulp.dest("./source/js"))
   .pipe(uglify({
     toplevel: true
   }))
