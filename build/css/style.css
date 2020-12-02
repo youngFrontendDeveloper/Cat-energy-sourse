@@ -104,33 +104,105 @@ svg {
   color: #000000;
 }
 .page {
-  width: 320px;
-  background-color: rgba(164, 240, 23, 0.2);
+  min-width: 320px;
 }
 @media (min-width: 768px) {
   .page {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (min-width: 1150px) {
   .page {
-    width: 1440px;
+    min-width: 1440px;
+  }
+}
+.header {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+@media (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 24px;
+  }
+}
+@media (min-width: 1150px) {
+  .header {
+    padding-top: 53px;
+    padding-right: 110px;
+    padding-left: 110px;
   }
 }
 .logo {
   display: block;
-  width: 191px;
-  height: 38px;
+  width: 59.69%;
 }
 @media (min-width: 768px) {
   .logo {
-    width: 174px;
-    height: 52px;
+    width: 22.66%;
   }
 }
 @media (min-width: 1150px) {
   .logo {
-    width: 202px;
-    height: 60px;
+    width: 14.03%;
   }
+}
+.nav {
+  position: relative;
+}
+.nav__btn-menu {
+  position: absolute;
+  top: -25px;
+  right: 0;
+}
+@media (min-width: 768px) {
+  .nav__btn-menu {
+    display: none;
+  }
+}
+.menu {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 440px;
+    height: 36px;
+  }
+}
+@media (min-width: 1150px) {
+  .menu {
+    width: 478px;
+    height: 40px;
+  }
+}
+.btn-menu {
+  font-size: 0;
+  width: 24px;
+  height: 18px;
+  padding: 0px;
+  background-image: url("../img/btn-menu.svg");
+  background-size: 24px;
+  background-color: transparent;
+  border: 0;
+  outline: transparent;
+}
+.btn-menu--closed {
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/btn-close.svg);
+  background-size: 18px;
 }
