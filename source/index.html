@@ -10,30 +10,72 @@
   </head>
   <body class="page">
     <header class="header">
-      <a href="#" class="logo">
-        <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img src="img/logo-mobile.svg" alt="Логотип компании" width="191" height="38">
-        </picture>
-      </a>
+      <div class="header__logo">
+        <a class="logo logo--current">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img src="img/logo-mobile.svg" alt="Логотип компании" width="191" height="38">
+          </picture>
+        </a>
+      </div>
       <nav class="nav">
-        <button class="btn-menu nav__btn-menu">Меню</button>
+        <button class="btn-menu nav__btn-menu visualy-hidden">Меню</button>
         <ul class="menu">
-          <li><a href="#">главная</a></li>
-          <li><a href="#">каталог продукции</a></li>
-          <li><a href="#">подбор программы</a></li>
+          <li><a href="#" class="link menu__link menu__link--active">главная</a></li>
+          <li><a href="#" class="link menu__link">каталог продукции</a></li>
+          <li><a href="#" class="link menu__link">подбор программы</a></li>
         </ul>
       </nav>
     </header>
     <main class="main">
-      <h1 class="title">Функциональное<br>
-        питание для котов</h1>
+      <section class="promo">
+        <div class="promo__text-block">
+          <h1 class="title promo__title">Функциональное<br>
+            питание для котов</h1>
+          <p class="promo__slogan">Занялся собой? Займись котом!</p>
+        </div>
+        <div class="promo__image-block">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/index-can-desktop.webp 1x, img/index-can-desktop@2x.webp  2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/index-can-tablet.webp 1x, img/index-can-tablet@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png  2x">
+            <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
+            <img src="img/index-can-mobile.png" srcset="img/index-can-mobile.png 1x, img/index-can-mobile@2x.png 2x" alt="Баночка с питанием" width="280" height="270">
+          </picture>
+        </div>
+        <a href="#" class="link promo__link">подобрать программу</a>
+      </section>
+      <section class="offer">
+        <div class="offer__item offer__losing-weight">
+          <h2 class="offer-title">похудение</h2>
+          <p class="offer__text">
+            Ваш кот весит больше собаки и почти утратил способность
+лазить по деревьям? Пора на диету! Cat Energy Slim поможет
+вашему питомцу сбросить лишний вес.
+          </p>
+          <a href="#" class="link offer__link">каталог slim</a>
+        </div>
+        <div class="offer__item offer__set-weight">
+          <h2 class="offer-title">набор массы</h2>
+          <p class="offer__text">
+            Заработать авторитет среди дворовых котов и даже собак?
+Серия Cat Energy Pro поможет вашему коту нарастить
+необходимые мышцы!
+          </p>
+          <a href="#" class="link offer__link">каталог pro</a>
+        </div>
+      </section>
+      <section class="how-works">
+
+      </section>
+
+
 
     </main>
 
 
 
-
+    <script src="js/script.js"></script>
   </body>
 </html>

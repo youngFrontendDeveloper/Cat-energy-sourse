@@ -40,7 +40,9 @@ gulp.task("css", function () {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(less())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([
+      autoprefixer()
+    ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -117,7 +119,6 @@ gulp.task("server", function () {
     cors: true,
     ui: false
   });
-
 
   gulp.watch("source/less/**/*.less", gulp.series("css"));
   gulp.watch("source/js/**/*.js", gulp.series("script"));
